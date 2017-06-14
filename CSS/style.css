@@ -1,0 +1,94 @@
+
+body {
+	background-color: #e3e5e8;
+	padding-bottom: 50px;
+	font-size: 18px;
+	font-family: Arial,sans-serif;
+}
+nav {
+	text-align: center;
+	background-color: white;
+	overflow: hidden; /* Roditeljski element dobija normalnu visinu iako su float-ovani child elementi.*/ 						
+}
+
+ul {
+	list-style-type: none;
+	float: left;
+	margin: 0 35%;
+	width: 30%;
+	padding: 0; /* CSS default padding-left bio 40px */
+}
+ul li {
+	float: left;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 4px;
+	width: calc(25% - 12px); 
+	background-color: #658fce;
+}
+ul li a {
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+}
+ul li a:hover {
+	font-weight: bold;
+}
+.clear {
+	clear: both;
+}
+h1, h2, h3, p, caption, th, td {
+	color: #363738;
+}
+
+.wrapper {
+	width: calc(60% - 82px);
+	margin: 0 20%;
+	border-left: 1px solid black;
+	border-bottom: 3px solid black;
+	padding: 40px;
+	background-color: white;
+}
+article {
+	width: calc(50% - 22px);
+	float: left;
+	padding-right: 20px;
+}
+h1 {
+	font-size: 24px;
+}
+h2, h3 {
+	font-size: 20px;
+}
+h3, th {
+	font-weight: normal; 
+}
+article p {
+	text-align: justify;
+}
+.boldiran {
+	font-weight: bold;
+}
+.imgContainer {
+	width: calc(50% - 22px);
+	float: right;
+	padding-left: 20px;
+}
+.clear {
+	clear: both;
+}
+table caption {
+	text-align: left;
+	padding: 20px 0;
+	font-weight: bold;
+} 
+table {
+	width: 100%;
+	text-align: center;
+	border-spacing: 0; /* Otklanja bele razmake izmedju celija tabele(trebalo bi i redova)*/
+}
+
+table tr:nth-child(3), table tr:nth-child(5) {
+	background-color: #d0d3d8;
+}
